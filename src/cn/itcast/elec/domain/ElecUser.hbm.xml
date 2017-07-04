@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+
+    <class name="cn.itcast.elec.domain.ElecUser" table="Elec_User">
+        <id name="userID"  type="string">
+        <column name="userID" not-null="true" sql-type="varchar(50)"></column>
+            <generator class="uuid">
+         <!-- uuid 对应32位随机字符串 不会重复 -->
+            </generator>
+            
+        </id>         
+        <property name="jctID" >
+        <column name="jctID" sql-type="varchar(50)"> </column>
+        </property>
+        <property name="birthday" type="java.util.Date">
+        <column name="birthday" length="50"></column>
+        </property>
+         <property name="onDutyDate" type="java.util.Date">
+        <column name="onDutyDate" length="50"></column>
+        </property>
+         <property name="offDutyDate" type="java.util.Date">
+        <column name="offDutyDate" length="50"></column>
+        </property>
+        <property name="userName" >
+        <column name="userName" sql-type="varchar(50)"></column>
+        </property>
+         <property name="loganName" >
+        <column name="loganName" sql-type="varchar(50)"></column>
+        </property>
+         <property name="loganPwd" >
+        <column name="loganPwd" sql-type="varchar(50)"></column>
+        </property>
+         <property name="sexID" >
+        <column name="sexID" sql-type="varchar(10)"></column>
+        </property>
+         <property name="address" >
+        <column name="address" sql-type="varchar(50)"></column>
+        </property>
+        <property name="email" >
+        <column name="email" sql-type="varchar(50)"></column>
+        </property>
+         <property name="mobile" >
+        <column name=" mobile" sql-type="varchar(50)"></column>
+        </property>
+         <property name="contactTel" >
+        <column name="contactTel" sql-type="varchar(50)"></column>
+        </property>
+         <property name="isDuty" >
+        <column name="isDuty" sql-type="varchar(50)"></column>
+        </property>
+         <property name="remark" >
+        <column name="remark" sql-type="varchar(500)"></column>
+        
+        </property>
+    </class>
+
+</hibernate-mapping>

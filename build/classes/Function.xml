@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 当权限超出了26个字母的时候 可以采用以下的方法扩充权限库 权限code可以用多位字母表示 中间用，@..隔开 再获取String []chomds=chomd.split(",");再判断contains -->
+<ElecData>
+
+	<Function>
+		<FunctionCode>a</FunctionCode>
+		<FunctionName>问题反馈检查</FunctionName>
+		<ParentCode>device</ParentCode>
+		<ParentName>问题反馈</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>e</FunctionCode>
+		<FunctionName>增加事件</FunctionName>
+		<ParentCode>jct</ParentCode>
+		<ParentName>事件管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>f</FunctionCode>
+		<FunctionName>删除事件</FunctionName>
+		<ParentCode>jct</ParentCode>
+		<ParentName>事件管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>g</FunctionCode>
+		<FunctionName>编辑事件</FunctionName>
+		<ParentCode>jct</ParentCode>
+		<ParentName>事件管理</ParentName>
+	</Function>
+
+
+
+	<Function>
+		<FunctionCode>i</FunctionCode>
+		<FunctionName>权限分配</FunctionName>
+		<ParentCode>sysmng</ParentCode>
+		<ParentName>系统管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>j</FunctionCode>
+		<FunctionName>待办事宜</FunctionName>
+		<ParentCode>sysmng</ParentCode>
+		<ParentName>系统管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>k</FunctionCode>
+		<FunctionName>数据字典维护</FunctionName>
+		<ParentCode>sysmng</ParentCode>
+		<ParentName>系统管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>x</FunctionCode>
+		<FunctionName>日志管理</FunctionName>
+		<ParentCode>sysmng</ParentCode>
+		<ParentName>系统管理</ParentName>
+	</Function>
+
+	<Function>
+		<FunctionCode>l</FunctionCode>
+		<FunctionName>新增功能</FunctionName>
+		<ParentCode>operate</ParentCode>
+		<ParentName>用户管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>m</FunctionCode>
+		<FunctionName>删除功能</FunctionName>
+		<ParentCode>operate</ParentCode>
+		<ParentName>用户管理</ParentName>
+	</Function>
+	<Function>
+		<FunctionCode>n</FunctionCode>
+		<FunctionName>编辑功能</FunctionName>
+		<ParentCode>operate</ParentCode>
+		<ParentName>用户管理</ParentName>
+	</Function>
+
+
+</ElecData>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+
+    <class name="cn.itcast.elec.domain.ElecUserRole" table="Elec_User_Role">
+        <id name="seqID" type="string" >
+        <column name="seqID" not-null="true" sql-type="varchar(50)"></column>
+            <generator class="uuid">
+         <!-- uuid 对应32位随机字符串 不会重复 -->
+            </generator>
+            
+        </id>         
+        <property name="userID" >
+        <column name="userID" sql-type="varchar(50)"> </column>
+        </property>
+        <property name="roleID" >
+        <column name="roleID" sql-type="varchar(50)"></column>
+         </property>
+         <property name="remark" >
+        <column name="remark" sql-type="varchar(500)"> </column>
+        </property>
+     
+        
+        
+    </class>
+
+</hibernate-mapping>

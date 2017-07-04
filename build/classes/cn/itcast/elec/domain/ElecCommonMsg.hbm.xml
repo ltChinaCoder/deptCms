@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping > 
+    <class name="cn.itcast.elec.domain.ElecCommonMsg" table="Elec_CommonMsg">
+    <cache usage="read-write"></cache>
+        <id name="comID"  type="string">
+        <column name="comID" not-null="true" sql-type="varchar(50)"></column>
+            <generator class="uuid">
+         <!-- uuid 对应32位随机字符串 不会重复 -->
+            </generator>           
+        </id>         
+        <property name="stationRun" >
+        <column name="stationRun" sql-type="varchar(50)"> </column>
+        </property>
+        <property name="devRun" >
+        <column name="devRun" sql-type="varchar(50)"></column>
+        </property>
+        <property name="createDate" type="date">
+        <column name="createDate" length="50"></column>
+        </property>
+    </class>
+</hibernate-mapping>

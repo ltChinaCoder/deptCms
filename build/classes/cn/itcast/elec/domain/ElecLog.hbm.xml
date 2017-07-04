@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+
+    <class name="cn.itcast.elec.domain.ElecLog" table="Elec_Log">
+        <id name="logId"  type="string">
+        <column name="logId" not-null="true" sql-type="varchar(50)"></column>
+            <generator class="uuid">
+         <!-- uuid 对应32位随机字符串 不会重复 -->
+            </generator>
+            
+        </id>         
+        <property name="ipAddress" >
+        <column name="ipAddress" sql-type="varchar(50)"> </column>
+        </property>
+        <property name="opeName" >
+        <column name="opeName" sql-type="varchar(50)"></column>
+        </property>
+        <property name="opeTime" type="date">
+        <column name="opeTime" length="50"></column>
+        </property>
+         <property name="details" >
+        <column name="details" sql-type="varchar(500)"></column>
+        </property>
+    </class>
+
+</hibernate-mapping>

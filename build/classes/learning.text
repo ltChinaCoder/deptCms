@@ -1,0 +1,80 @@
+html中的iframe相当于ajax 异步刷新 
+图片 css 路径 用 pagecontent.request.contextpath
+最好把页面都放到webinf下 客服端访问不到
+ssh层的设计 表现层（jsp）控制层 service层 dao层 持久层  数据库 从后往前测通一遍 再进行其他操作
+po对象指表对象 vo对象指从表单获取的对象
+dao要建立commondao 相同操作无需多写 直接继承 service用dao层操作 sessionfactory的hibernatetemplate  注解分层 resposity service controller
+事务管理器要在service层设置 一般设置为read-only=true 在save方法上要设置false 防止脏读乱读
+表现层表现的数据必须是vo对象 不能是po对象 得进行一次转换
+同时 写入数据库中的只能是vo对象不能是po对象 也要进行转换
+数据字典就是讲特定的数据信息和阿拉伯数字联系在一起 优点是便于  无论查找 便于crud 动态维护系统的基本项 还便于统计
+一般都是手动建表 不建议用映射来创建表格 风险性较大
+在vo对象设定时 把po对象照搬 但是必须都为String类型 无论前面有没有select
+在hbm文件中 String类型的数据在type中s要小写
+注意在hql查询中 表的名字是对应的类的名字
+vo对象可以根据form的值来随便添加 但是po对象不可以
+在通过传递具体的对象时 而且是在表单中很多空格需要填 这里可以直接用存到值栈的即可（ActionContext.getContext().getValueStack().push(arg0);）
+或者是模型vo对象始终不变的情况下都可以实现数据的同步
+在实现表格数据编辑的时候 需要重新从数据库中拿 如果有密码便签的 在struts2标签下 show为true即可
+使用struts2的标签的好处 1搜索表单 可以保留上一次的搜索条件 自动保留上次的值 如果使用html标签 还需要手动赋值
+2 使用select更加方便一点
+href和form都可以直接加action
+jsp即使没报错 赋值错误也不会运行 切记仔细
+用dom4j来读取xml文件
+主要方法步骤
+第一 获取file的位置（采取相对路径 不写死）
+第二 获取document 利用saxreader方法
+第三 获得根标签 document.getrootElement
+第四 循环 利用根标签的elementIterable
+第五 实例化 通过element.elementText（）；
+在jsp中利用struts2定义变量  <s:set></s:set>这个标签
+在struts2标签中 只要涉及到取值和赋值 都要用% 如果用到request中的数据 则需要用#来引用 如果在对应的值栈中的action有与之对应的get和set方法则不需要# 另外%后的括号必须用大括号
+老版本的ajax和后台交互 首先需要一个ajax引擎 也就是创建xmlhttprequest的东西
+第一是 var xml=new 引擎 
+第二 建立监听事件 xml。onreadystatechange（返回值在其中 responseText）
+第三 是建立与谁进行交互 xml.open
+第四 获取表头 xml.setheader
+第五 传送数据 xml.send
+SQL中的case when then else end用法  是数据库的搜素函数 简化后台运行成本
+addScalar方法是hibernate里边用于query创建出来的“未命名”的数组 标明数组每个数的参数位置和代表名称
+md5是一项密码加密技术 说白了就是随机生成密码值 但是对应的随机值不会发生变化（32位）
+如何通过泛型参数来动态的加载类类型
+	ParameterizedType pt=(ParameterizedType) class1.getGenericSuperclass();
+		Class entity=(Class) pt.getActualTypeArguments()[0];
+getClass().getGenericSuperclass()返回表示此 Class 所表示的实体（类、接口、基本类型或 void）的直接超类的 Type然后将其转换ParameterizedType。。getActualTypeArguments()返回表示此类型实际类型参数的 Type 对象的数组[0]就是这个数组中第一个了。
+在js中document。getname 可以直接获取名称数组 不必新建数组
+var password=document.getElementById("logonPwd").value;		
+var defaultPwd=document.getElementById("logonPwd").defaultValue;
+比较md5密码是否需要加密的判断条件 原有密码和现有密码
+request.getSession().invalidate();; 退出以后清空session
+项目中使用进度条
+  文件的上传和下载
+  excel word等文件的导入和导出
+  操作大批量数据
+  远程操作数据
+操作方法：引用一个表 并且导入一个js文件即可
+解决同一个td中不同标签不同高的情况 可以在td中在加一个table 然后一个tr中放不同的td可以解决不在用一个td中了
+在更换图片的时候为了能变化 不使用缓存中的资源 image.src="${pageContext.request.contextPath}/image.jsp?timestamp="+new Date().getTime(); 需要加一个时间段重新取值
+对于checkbox 勾选住了才能返回值 不然为空
+在做记住我的功能时 主要
+就是利用cookie 在传值 还有他的有效时间的控制setmaxage 别忘了改路径
+在java中对特定的值进行编码格式的改变 用URLcoder方法尤其是处理中文登录名的时候 加码
+URLDecoder解码
+在jsp中也可以用java代码<%=值%>代替 
+经常在网站中看到访问页面前需要自动回到登录页面 那就是利用了过滤器 先创建过滤器类 然后在webxml中配置 还需要配置session的有效时长
+日志管理在项目中的作用：记录数据  ；利用log4jar的作用 在硬盘上生成文件 先导入log4.properties文件 设置存储信息位置 log4j.appender.R.File 设置信息的级别 log4j.rootLogger=INFO, A1, R info指一般信息 还有warn等 properties类型的文件 注释用#
+对系统的安全，性能进行统一的维护和管理  
+对业务数据进行统一的维护和管理
+两种方法 一个是log日志记录 保存到硬盘中 减少数据库压力 二个是存储到数据库中
+Log log=LogFactory.getLog(ElecMenuAction.class);
+在用数据库存储的时候 主要是在给个action的操作方法中加一个存储日志的方法 一般参数为request和details（自行设定） 然后保存即可
+request.getRemoteAddr() 获得ip地址的方法
+分页的操作 导入一个js和两个java文件 主要利用pub函数 form1和form2提交互换参数 和userlist充当userindex的动态form2
+将数据导出到excel中 利用poi 首先导包  poi中所有的方法都是hssf开头 主要方法为hssfworkbook 层层递进 闯进sheet row cell 以及一些格式 最后进行数据导入 利用outputsream将excel中的数据通过service导入到数据库中 利用jxl技术 首先进行导包 然后进行java对数据类型进行拆分 包装成list 然后通过实例化 储存到数据库中 需要注意的是在jsp中 上传文件中form要加enctype="multipart/form-data" 添加组件 <s:file name="file" cssStyle="wi写死
+poi和jxl对excel进行导入和导出 都是利用输入输出流 创建格式 一般是 hssfworkbook 相当于xxxfactory hssfsheet 表单 row 行 column 列 cell 小哥 主要就是对格式进行编排
+在项目中写路径不能写死 最好用到reqletcontext的getpath找路径 不用非得在方法中写参数request 没必要 reallpath到webapps路径的项目名称
+判断list是否为空 条件请勿缺少
+select count(*) from tablename
+返回一定是个整数
+在数据库中 有 integer long biginteger 都是number类型 一般强转为number属性 不会出错
+不同驱动 不同版本 返回的值不同

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web;#system#"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/全jar/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/backport-util-concurrent.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/common-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-lang-2.5.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/commons-lang-2.5-sources.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/ehcache-1.5.0.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/freemarker-2.3.15.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/hibernate3.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/jstl.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/morph-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/morph-sandbox-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/mysql-connector-java-5.1.10-bin.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/ognl-2.7.3.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/pinyin4j-2.5.0.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/standard.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/struts2-core-2.1.8.1.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/struts2-core-2.1.8.1-sources.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/xwork-core-2.1.6.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/xwork-core-2.1.6-sources.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/aspectj-1.8.9.jar"/>
+	<classpathentry kind="lib" path="E:/全jar/spring.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/spring-2.5.5-sources-1497765345057.jar"/>
+	<classpathentry kind="lib" path="E:/BaiduYunDownload/国家电力项目_第八天/itcast1222elec/WebRoot/WEB-INF/lib/poi-2.5.1.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/poi-2.5.1-final-20040804-sources.jar"/>
+	<classpathentry kind="lib" path="E:/BaiduYunDownload/国家电力项目_第八天/itcast1222elec/WebRoot/WEB-INF/lib/jxl.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
