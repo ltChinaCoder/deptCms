@@ -35,7 +35,6 @@ public class ElecCommonMsgServiceImpl implements IElecCommonMsgService{
 		lmh.put("createDate", "desc");
 		List<ElecCommonMsg> list=icm.findByContionsNoPage(hqlWhere, lmh);
 		List<ElecCommonMsgForm> formList=this.voConvertPo(list);
-		System.out.println();
 		return formList;
 	}
 
