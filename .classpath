@@ -46,10 +46,6 @@
 	<classpathentry kind="lib" path="E:/全jar/spring.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/spring-2.5.5-sources-1497765345057.jar"/>
 	<classpathentry kind="lib" path="E:/BaiduYunDownload/国家电力项目_第八天/itcast1222elec/WebRoot/WEB-INF/lib/poi-2.5.1.jar" sourcepath="C:/Users/oo/AppData/Local/Temp/decompiler/source/poi-2.5.1-final-20040804-sources.jar"/>
 	<classpathentry kind="lib" path="E:/BaiduYunDownload/国家电力项目_第八天/itcast1222elec/WebRoot/WEB-INF/lib/jxl.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

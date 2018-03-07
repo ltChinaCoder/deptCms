@@ -206,7 +206,7 @@ TH {
 									<%} else { %>
 									<TR>
 										<TD class="box05" onmouseover="backgroundColorChange(this,'white');" onmouseout="backgroundColorChange(this,'');">
-											<A class="cl_01" onclick="linkcolorchange(this)" href="${pageContext.request.contextPath }/system/elecEventAction_userHome.do?userId=${user.loganName}" target="mainFrame">事件管理</A>
+											<A class="cl_01" onclick="linkcolorchange(this)" href="${pageContext.request.contextPath }/system/elecEventAction_userHome.do?userId=${user.loganName}" target="mainFrame">志愿事件总览</A>
 										</TD>
 									</TR>
 									<%} %>
@@ -250,7 +250,7 @@ TH {
 											
 					
 										     
-										     <A class="cl_01" onclick="linkcolorchange(this)" href="${pageContext.request.contextPath }/system/elecUserAction_edit.do?userId=${user.userID}&roleFlag=1 " target="mainFrame">用户管理</A>
+										     <A class="cl_01" onclick="linkcolorchange(this)" href="${pageContext.request.contextPath }/system/elecUserAction_edit.do?userId=${user.userID}&roleFlag=1 " target="mainFrame">个人信息管理</A>
 										     
 										</TD>
 									</TR>
